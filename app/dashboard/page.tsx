@@ -27,7 +27,7 @@ export default async function Dashboard() {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow">
+          <div className="bg-white p-6 rounded-lg shadow mb-8">
             <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <Link href="/homework" className="bg-orange-500 text-white p-6 rounded text-center hover:bg-orange-600">Homework</Link>
@@ -36,6 +36,27 @@ export default async function Dashboard() {
               <Link href="/messages" className="bg-indigo-500 text-white p-6 rounded text-center hover:bg-indigo-600">Messages</Link>
             </div>
           </div>
+
+          <div className="bg-white p-6 rounded-lg shadow">
+            <h2 className="text-2xl font-bold mb-4">📝 Tests</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="border-2 border-indigo-200 rounded-xl p-5 hover:border-indigo-400 transition">
+                <h3 className="text-lg font-bold text-indigo-800 mb-1">Relative Clause Quiz</h3>
+                <p className="text-gray-500 text-sm mb-4">25 questions · Multiple choice · Graded A–F</p>
+                <div className="flex gap-3">
+                  <Link href="/tests/relative-clause"
+                    className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 text-sm font-semibold">
+                    Take Test →
+                  </Link>
+                  <Link href="/tests/relative-clause/leaderboard"
+                    className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 text-sm font-semibold">
+                    🏆 Leaderboard
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </ProtectRoute>
